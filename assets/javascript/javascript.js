@@ -8,17 +8,28 @@ var lossestext=document.getElementById("losses-text");
 
 var wins = 0;
 var losses = 0;
-var guessleft = 9;
+var guessleft = 10;
 
 var computerGuess = letterArray[Math.floor(Math.random() * 26)];
 
 
-document.onkeyup = function(event) {
+for (var i=0; i < 9; i++) {
+    document.onkeyup = function(event) {
     var userGuess = event.key;
- 
-
-    guesslogtext.textContent = "Your guesses so far: " + userGuess}
-
-    // guessleft: function() {
-    
-    //     this.guessleft = this.guessleft - 1
+    guessleft --;
+    guesslogtext.textContent = "Your guesses so far: " + userGuess
+    winstext.textcontent = "wins: " + wins;
+    lossestext.textcontent = "losses:" + losses;
+    console.log(guessleft);
+    console.log(computerGuess)
+    console.log(userGuess)
+    if (userGuess === computerGuess) {
+    wins ++;
+    // winstext.textcontent = "Wins: " + this.wins
+}
+else {
+    losses ++;
+    // lossestext.textcontent = "losses: " + this.losses
+}
+}
+}

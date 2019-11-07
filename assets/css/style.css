@@ -1,0 +1,28 @@
+/***********************
+GENERAL
+***********************/
+
+html, 
+body {
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    line-height: 4;
+}

@@ -7,8 +7,8 @@ body {
     height: 100%;
 }
 body {
-    font-family: sans-serif;
-    background-image: url("../images/background2.jpg");
+    /* font-family: sans-serif; */
+    background-image: url("../images/background3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -22,7 +22,34 @@ body {
     align-items: center;
 }
 
+.card-color {
+    /* background-color: #420F6E;
+    background-color: #9360C0;
+    background-color: #F3A54C;
+    background-image: linear-gradient(rgb(35, 6, 56), rgb(109, 61, 151)); */
+    background-color: transparent;
+    border: none;
+}
+
 .text {
     text-align: center;
-    line-height: 4;
+    line-height: 2;
+    color: #eee;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+}
+
+.title {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 2rem;
+}
+
+.guesses {
+    font-size: 1.5rem;
+}
+
+.instruction {
+    font-size: 1.75rem;
+    /* font-weight: 800; */
 }
